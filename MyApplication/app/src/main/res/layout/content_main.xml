@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+
+
+    <Button
+        android:id="@+id/btn_2PIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2PIN" />
+
+    <Button
+        android:id="@+id/btn_2POUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/btn_2PIN"
+        android:text="2POUT" />
+
+    <Button
+        android:id="@+id/btn_3PIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_2PIN"
+        android:text="3PIN" />
+
+    <Button
+        android:id="@+id/btn_3POUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/btn_3PIN"
+        android:layout_alignTop="@id/btn_3PIN"
+        android:text="3POUT" />
+
+    <Button
+        android:id="@+id/btn_FTIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_3PIN"
+
+        android:text="FTIN" />
+
+    <Button
+        android:id="@+id/btn_FTOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/btn_FTIN"
+        android:layout_alignTop="@id/btn_FTIN"
+        android:text="FTOUT" />
+
+    <Button
+        android:id="@+id/btn_OR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_FTOUT"
+        android:text="ORB" />
+
+    <Button
+        android:id="@+id/btn_DR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/btn_OR"
+        android:layout_alignTop="@id/btn_OR"
+        android:text="DRB" />
+
+    <Button
+        android:id="@+id/btn_ASISST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_DR"
+        android:text="ASSIST" />
+
+    <Button
+        android:id="@+id/btn_STEEL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/btn_ASISST"
+        android:layout_alignTop="@id/btn_ASISST"
+        android:text="STEEL" />
+
+    <Button
+        android:id="@+id/btn_BLOCK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_ASISST"
+        android:text="block" />
+
+    <Button
+        android:id="@+id/btn_turnOver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/btn_BLOCK"
+        android:layout_alignTop="@id/btn_BLOCK"
+        android:text="TO" />
+
+</RelativeLayout>

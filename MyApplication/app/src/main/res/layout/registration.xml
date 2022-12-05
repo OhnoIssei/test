@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/radio_myteam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="自チーム"/>
+        <RadioButton
+            android:id="@+id/radio_opposingteam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="相手チーム"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:layout_marginTop="150dp"
+
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名前"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/et_No1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_toEndOf="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"/>
+
+    <EditText
+        android:id="@+id/et_No2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        />
+
+    <Button
+        android:id="@+id/btn_No1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登録"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="40dp"/>
+
+
+    <Button
+        android:id="@+id/btn_No2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_No1"
+        android:text="完了"/>
+
+</RelativeLayout>
+
