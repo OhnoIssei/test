@@ -36,6 +36,7 @@ public class AppDatabaseSingleton {
         }
     };
 
+<<<<<<< HEAD
     static final Migration MIGRATION_5_6 = new Migration(5, 6) {
         @Override
         public void migrate(SupportSQLiteDatabase database) {
@@ -63,6 +64,8 @@ public class AppDatabaseSingleton {
         }
     };
 
+=======
+>>>>>>> origin/main
 
 
     public static AppDatabase getInstance(Context context) {
@@ -77,8 +80,11 @@ public class AppDatabaseSingleton {
                 .addMigrations(MIGRATION_2_3)
                 .addMigrations(MIGRATION_3_4)
                 .addMigrations(MIGRATION_4_5)
+<<<<<<< HEAD
                 .addMigrations(MIGRATION_5_6)
                 .addMigrations(MIGRATION_6_7)
+=======
+>>>>>>> origin/main
                 .build();
         return instance;
     }

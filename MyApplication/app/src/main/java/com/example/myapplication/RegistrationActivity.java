@@ -9,11 +9,16 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+<<<<<<< HEAD
 //選手登録画面
 public class RegistrationActivity extends AppCompatActivity {
 
     int team;
     int Number;
+=======
+
+public class RegistrationActivity extends AppCompatActivity {
+>>>>>>> origin/main
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +27,7 @@ public class RegistrationActivity extends AppCompatActivity {
         //どのレイアウトファイルを画面に表示するか決めている
         setContentView(R.layout.registration);
 
+<<<<<<< HEAD
         //ラジオボタン
         //押されているボタンによってテーブルを変える
         //自チーム
@@ -42,6 +48,8 @@ public class RegistrationActivity extends AppCompatActivity {
         });
 
 
+=======
+>>>>>>> origin/main
         //登録ボタン
         Button bt_registration = findViewById(R.id.btn_No1);
         bt_registration.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +68,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 getName = editName.getText().toString();
 
                 //Noと名前が両方入力されている場合のみデータベースに登録
+<<<<<<< HEAD
                 if(!(getNumber.equals(  "")) && !(getName.equals(""))){
 
                     AppDatabase db = AppDatabaseSingleton.getInstance(getApplicationContext());
@@ -77,6 +86,18 @@ public class RegistrationActivity extends AppCompatActivity {
                     }
                     editNo.getEditableText().clear();
                     editName.getEditableText().clear();
+=======
+                if(!(getNumber.equals("")) && !(getName.equals(""))){
+
+                    int Number = Integer.parseInt(getNumber.toString());
+                    AppDatabase db = AppDatabaseSingleton.getInstance(getApplicationContext());
+                    AccessTimeDao accessTimeDao = db.accessTimeDao();
+                    accessTimeDao.playerRegistration(getName.toString(),Number);
+
+                    editNo.getEditableText().clear();
+                    editName.getEditableText().clear();
+
+>>>>>>> origin/main
                 }
 
             }

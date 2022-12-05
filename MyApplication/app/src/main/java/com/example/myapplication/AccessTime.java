@@ -56,8 +56,11 @@ public class AccessTime {
     //PT
     @ColumnInfo(defaultValue="0")
     private int point;
+<<<<<<< HEAD
     @ColumnInfo(defaultValue="0")
     private int selectionTeam;
+=======
+>>>>>>> origin/main
 
 
     public AccessTime(String accessTime) {this.accessTime = accessTime;}
@@ -112,7 +115,10 @@ public class AccessTime {
 
     public void setPoint(int point) {this.point = point;}
     public int getPoint() {return point;}
+<<<<<<< HEAD
 
     public void setSelectionTeam(int selectionTeam) {this.selectionTeam = selectionTeam;}
     public int getSelectionTeam() {return selectionTeam;}
+=======
+>>>>>>> origin/main
 }

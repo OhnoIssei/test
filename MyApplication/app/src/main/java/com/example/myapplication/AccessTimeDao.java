@@ -62,7 +62,11 @@ public interface AccessTimeDao {
     @Query("DELETE FROM accesstime")
     void  clear();
 
+<<<<<<< HEAD
     @Query("UPDATE accesstime SET point = 0, point2_in = 0, point2_out = 0,point3_in = 0, point3_out = 0,ft_in = 0, ft_out = 0")
+=======
+    @Query("UPDATE accesstime SET point = 0, point2_in = 0, point2_out = 0,point3_in = 0, point3_out = 0,ft_in = 0, ft_out = 0,offense_Rebound = 0, defense_Rebound = 0, assist = 0, steel = 0,block = 0,turnOver = 0, point = 0")
+>>>>>>> origin/main
     void scoreDelete();
 
     @Query("UPDATE accesstime SET point = (point2_in * 2) + (point3_in * 3)")

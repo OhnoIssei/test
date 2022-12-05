@@ -12,7 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.lang.ref.WeakReference;
 import java.util.List;
 
+<<<<<<< HEAD
 //スコア画面
+=======
+>>>>>>> origin/main
 public class SecondActivity extends AppCompatActivity{
     //アプリが起動した時に実行するメソッxド
     @Override
@@ -25,7 +28,10 @@ public class SecondActivity extends AppCompatActivity{
         //メイン画面で押されたボタンのNo取得
         Intent intent = getIntent();
         int getdata = intent.getIntExtra("SEND_DATA",0);
+<<<<<<< HEAD
         int selectionTeam = intent.getIntExtra("selection_team",0);
+=======
+>>>>>>> origin/main
 
         //2PINボタン
         Button bt_update = findViewById(R.id.btn_2PIN);

@@ -26,11 +26,14 @@ public class ThirdActivity extends AppCompatActivity {
         //どのレイアウトファイルを画面に表示するか決めている
         setContentView(R.layout.fragment_first);
 
+<<<<<<< HEAD
         //オブジェクトを取得（オブジェクトの動作を決める時に必要）
         TextView tv = findViewById(R.id.index);
         TextView tv2 = findViewById(R.id.index2);
         TextView tv3 = findViewById(R.id.index3);
 
+=======
+>>>>>>> origin/main
         //データベースの値を全て取得
         StringBuilder sb = new StringBuilder();
         AppDatabase db = AppDatabaseSingleton.getInstance(getApplicationContext());
@@ -203,6 +206,7 @@ public class ThirdActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+<<<<<<< HEAD
                 StringBuilder sb = new StringBuilder();
                 StringBuilder sb2 = new StringBuilder();
                 StringBuilder sb3 = new StringBuilder();
@@ -224,6 +228,11 @@ public class ThirdActivity extends AppCompatActivity {
                     sb3.append(at.getPlayerNumber()).append("\n");
                 }
                 tv3.setText(sb3.toString());
+=======
+                AppDatabase db = AppDatabaseSingleton.getInstance(getApplicationContext());
+                AccessTimeDao accessTimeDao = db.accessTimeDao();
+                accessTimeDao.clear();
+>>>>>>> origin/main
             }
         });
 
@@ -233,6 +242,7 @@ public class ThirdActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+<<<<<<< HEAD
                 StringBuilder sb = new StringBuilder();
                 StringBuilder sb2 = new StringBuilder();
                 StringBuilder sb3 = new StringBuilder();
@@ -243,6 +253,11 @@ public class ThirdActivity extends AppCompatActivity {
                 for (AccessTime at: atList) {
 
                 }
+=======
+                AppDatabase db = AppDatabaseSingleton.getInstance(getApplicationContext());
+                AccessTimeDao accessTimeDao = db.accessTimeDao();
+                accessTimeDao.scoreDelete();
+>>>>>>> origin/main
             }
         });
 

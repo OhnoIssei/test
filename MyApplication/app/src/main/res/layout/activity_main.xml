@@ -36,6 +36,7 @@
             android:padding="0dp"
             android:stretchColumns="*">
 
+<<<<<<< HEAD
 
         </TableLayout>
 
@@ -54,6 +55,8 @@
             android:layout_height="wrap_content"
             android:padding="0dp"
             android:stretchColumns="*">
+=======
+>>>>>>> origin/main
         </TableLayout>
 
     </ScrollView>
